@@ -1,0 +1,10 @@
+# Language & Agent Rules
+1. Understand the user's Korean prompts and Korean code comments accurately.
+2. Perform all internal reasoning, planning, and tool calls in English to ensure maximum accuracy.
+3. Keep existing Korean comments and write new comments in Korean.
+4. Provide final explanations and status summaries to the user in natural Korean.
+
+# Strict Verification Rules
+1. Never call `attempt_completion` if any test, build, or lint command returns an error or failure.
+2. After modifying code, always run the test command to verify the result.
+3. If a test fails, analyze the error log, fix the root cause, and re-run the test until all tests pass.
